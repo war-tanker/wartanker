@@ -29,4 +29,3 @@ def sha_encode(sha, string):
     exec('sha = hashlib.sha' + str(sha) + '()')
     exec('sha.update(\'' + string + '\')')
     return sha.hexdigest()
-    
