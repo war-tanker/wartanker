@@ -27,10 +27,16 @@ def base_encode(base, string, encoding='UTF-8'):
         return eval('b' + str(base) + "encode('" + str(string) + "', '" + str(encoding) + "')")
     else: raise UnknownBaseError
 
-def base_decode(base, string):
+def base_decode(string, base=''):
     if base in (16, 32, 64):
         return eval('b' + str(base) + "decode('" + str(string) + "')")
-    else: raise UnknownBaseError
+    else: 
+        try: return b64decode(string)
+        except:
+            try: return b32decode(string)
+            except:
+                try: return b16decode(string)
+                except: raise UnknownBaseError
 
 def hex2str(hexdata, _split=''):
     if _split:
