@@ -8,4 +8,4 @@ def find_flag(regex, file_path):
     file = open(file_path, 'r')
     data = file.read()
     p = re.compile(regex)
-    print p.findall(data)
+    return p.findall(data)
