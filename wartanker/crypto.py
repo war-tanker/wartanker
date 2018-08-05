@@ -64,6 +64,6 @@ def caesar_decrypt(string, key=-1):
         ret = ''
         for i in string:
             if (i.isalpha()):
-                i = chr(((ord(i) - ord('A' if i.isupper() else 'a') + key) % 26) + ord('A' if i.isupper() else 'a'))
+                i = chr(((ord(i) - ord('A' if i.isupper() else 'a') - key) % 26) + ord('A' if i.isupper() else 'a'))
             ret += i
         print ('[*] key: ' + str(key) + '  =>  ' + ret)
