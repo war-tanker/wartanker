@@ -55,8 +55,12 @@ def caesar_encrypt(string, key):
         ret += i
     return ret
 
-def caesar_decrypt(string):
-    for key in range(26):
+def caesar_decrypt(string, key=-1):
+    if (key == -1):
+        R = range(26)
+    else:
+        R = range(key, key+1)
+    for key in R:
         ret = ''
         for i in string:
             if (i.isalpha()):
