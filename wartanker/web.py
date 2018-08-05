@@ -1,6 +1,6 @@
 import requests
 
-def xss_exploit(method, URL, name, param, cookie, testurl):
+def xss_exploit(method, URL, name, param, cookie, testURL):
     # met=True: get, met=False: post
     if (method[:1].lower() == 'g'):
         met = True
@@ -17,7 +17,7 @@ def xss_exploit(method, URL, name, param, cookie, testurl):
         else:
             requests.post(URL, cookies=cookie, data=param)
         
-        res = requests.get(testurl, cookies=cookie).text
+        res = requests.get(testURL, cookies=cookie).text
         print '[*] trying ' + str(i) + ' of ' + str(data_len)
         if data[i] in res:
             print ('[*] How about trying \'' + data[i] + '\'?')
