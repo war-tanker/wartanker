@@ -1,5 +1,10 @@
 import requests
 
+def get_source(URL, json=''):
+    if not json:
+        return requests.get(URL).text
+    return requests.get(URL, json=json).text
+
 def xss_exploit(method, URL, name, param, cookie, testURL):
     # met=True: get, met=False: post
     if (method[:1].lower() == 'g'):
@@ -7,8 +12,7 @@ def xss_exploit(method, URL, name, param, cookie, testURL):
     else:
         met = False
     
-    file = open('./wartanker/xss.data')
-    data = file.read().split('\n')
+    data = open('./wartanker/xss.data').readlines()
     data_len = len(data)
     for i in range (data_len):
         param[name] = data[i]

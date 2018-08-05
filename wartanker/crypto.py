@@ -51,19 +51,18 @@ def caesar_encrypt(string, key):
     ret = ''
     for i in string:
         if (i.isalpha()):
-            i = chr(((ord(i) - ord('A' if i.isupper() else 'a') + key) % 26) + ord('A' if i.isupper() else 'a'))
-        ret += i
+            ret += chr(((ord(i) - ord('A' if i.isupper() else 'a') + key) % 26) + ord('A' if i.isupper() else 'a'))
     return ret
 
-def caesar_decrypt(string, key=-1):
-    if (key == -1):
-        R = range(26)
-    else:
-        R = range(key, key+1)
-    for key in R:
+def caesar_decrypt(string, key=''):
+    R = range(26)
+    if not key == '': R = range(key, key+1)
+    ans = []
+    for k in R:
         ret = ''
         for i in string:
             if (i.isalpha()):
-                i = chr(((ord(i) - ord('A' if i.isupper() else 'a') - key) % 26) + ord('A' if i.isupper() else 'a'))
-            ret += i
-        print ('[*] key: ' + str(key) + '  =>  ' + ret)
+                ret += chr(((ord(i) - ord('A' if i.isupper() else 'a') - k) % 26) + ord('A' if i.isupper() else 'a'))
+        if key == '': ans.append(ret)
+        else: return ret
+    return ans
