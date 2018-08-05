@@ -20,7 +20,7 @@ def xss_exploit(method, URL, name, param, cookie, testurl):
         res = requests.get(testurl, cookies=cookie).text
         print '[*] trying ' + str(i) + ' of ' + str(data_len)
         if data[i] in res:
-            print '[*] How about trying \'' + data[i] + '\'?'
+            print ('[*] How about trying \'' + data[i] + '\'?')
             more = raw_input('[*] Do you want more? [Y / N] ')
             if (more.lower() != 'y'):
                 break
