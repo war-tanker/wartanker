@@ -9,14 +9,12 @@
 
 <!-- wartanker.crypto -->
 ## `wartanker.crypto`
-
 ```python
 >>> from wartanker import crypto
 [*] Wartanker, the Python3 toolkit for solving CTF problems
 ```
 
 ### `wartanker.crypto.b16encode`
-
 ```python
 >>> crypto.b16encode('flag{wartanker}')
 '666C61677B77617274616E6B65727D'
@@ -40,7 +38,6 @@
 `wartanker.crypto.b16decode`는 `base16`으로 인코딩된 문자열을 디코딩한 값을 `str` 형으로 반환합니다.
 
 ### `wartanker.crypto.b32encode`
-
 ```python
 >>> crypto.b32encode('flag{wartanker}')
 'MZWGCZ33O5QXE5DBNZVWK4T5'
@@ -124,8 +121,6 @@
 
 ### `wartanker.crypto.caesar_encrypt`
 ```python
->>> from wartanker import crypto
-[*] Wartanker, the Python3 toolkit for solving CTF problems
 >>> crypto.caesar_encrypt('The quick brown fox jumps over the lazy dog', 5)
 'Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl'
 ```
@@ -133,31 +128,31 @@
 ```python
 >>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl')
 [*] key: 0  =>  Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl
-[*] key: 1  =>  Znk waoiq hxuct lud pasvy ubkx znk rgfe jum
-[*] key: 2  =>  Aol xbpjr iyvdu mve qbtwz vcly aol shgf kvn
-[*] key: 3  =>  Bpm ycqks jzwev nwf rcuxa wdmz bpm tihg lwo
-[*] key: 4  =>  Cqn zdrlt kaxfw oxg sdvyb xena cqn ujih mxp
-[*] key: 5  =>  Dro aesmu lbygx pyh tewzc yfob dro vkji nyq
-[*] key: 6  =>  Esp bftnv mczhy qzi ufxad zgpc esp wlkj ozr
-[*] key: 7  =>  Ftq cguow ndaiz raj vgybe ahqd ftq xmlk pas
-[*] key: 8  =>  Gur dhvpx oebja sbk whzcf bire gur ynml qbt
-[*] key: 9  =>  Hvs eiwqy pfckb tcl xiadg cjsf hvs zonm rcu
-[*] key: 10  =>  Iwt fjxrz qgdlc udm yjbeh dktg iwt apon sdv
-[*] key: 11  =>  Jxu gkysa rhemd ven zkcfi eluh jxu bqpo tew
-[*] key: 12  =>  Kyv hlztb sifne wfo aldgj fmvi kyv crqp ufx
+[*] key: 1  =>  Xli uymgo fvsar jsb nyqtw sziv xli pedc hsk
+[*] key: 2  =>  Wkh txlfn eurzq ira mxpsv ryhu wkh odcb grj
+[*] key: 3  =>  Vjg swkem dtqyp hqz lworu qxgt vjg ncba fqi
+[*] key: 4  =>  Uif rvjdl cspxo gpy kvnqt pwfs uif mbaz eph
+[*] key: 5  =>  The quick brown fox jumps over the lazy dog
+[*] key: 6  =>  Sgd pthbj aqnvm enw itlor nudq sgd kzyx cnf
+[*] key: 7  =>  Rfc osgai zpmul dmv hsknq mtcp rfc jyxw bme
+[*] key: 8  =>  Qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald
+[*] key: 9  =>  Pda mqeyg xnksj bkt fqilo kran pda hwvu zkc
+[*] key: 10  =>  Ocz lpdxf wmjri ajs ephkn jqzm ocz gvut yjb
+[*] key: 11  =>  Nby kocwe vliqh zir dogjm ipyl nby futs xia
+[*] key: 12  =>  Max jnbvd ukhpg yhq cnfil hoxk max etsr whz
 [*] key: 13  =>  Lzw imauc tjgof xgp bmehk gnwj lzw dsrq vgy
-[*] key: 14  =>  Max jnbvd ukhpg yhq cnfil hoxk max etsr whz
-[*] key: 15  =>  Nby kocwe vliqh zir dogjm ipyl nby futs xia
-[*] key: 16  =>  Ocz lpdxf wmjri ajs ephkn jqzm ocz gvut yjb
-[*] key: 17  =>  Pda mqeyg xnksj bkt fqilo kran pda hwvu zkc
-[*] key: 18  =>  Qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald
-[*] key: 19  =>  Rfc osgai zpmul dmv hsknq mtcp rfc jyxw bme
-[*] key: 20  =>  Sgd pthbj aqnvm enw itlor nudq sgd kzyx cnf
-[*] key: 21  =>  The quick brown fox jumps over the lazy dog
-[*] key: 22  =>  Uif rvjdl cspxo gpy kvnqt pwfs uif mbaz eph
-[*] key: 23  =>  Vjg swkem dtqyp hqz lworu qxgt vjg ncba fqi
-[*] key: 24  =>  Wkh txlfn eurzq ira mxpsv ryhu wkh odcb grj
-[*] key: 25  =>  Xli uymgo fvsar jsb nyqtw sziv xli pedc hsk
+[*] key: 14  =>  Kyv hlztb sifne wfo aldgj fmvi kyv crqp ufx
+[*] key: 15  =>  Jxu gkysa rhemd ven zkcfi eluh jxu bqpo tew
+[*] key: 16  =>  Iwt fjxrz qgdlc udm yjbeh dktg iwt apon sdv
+[*] key: 17  =>  Hvs eiwqy pfckb tcl xiadg cjsf hvs zonm rcu
+[*] key: 18  =>  Gur dhvpx oebja sbk whzcf bire gur ynml qbt
+[*] key: 19  =>  Ftq cguow ndaiz raj vgybe ahqd ftq xmlk pas
+[*] key: 20  =>  Esp bftnv mczhy qzi ufxad zgpc esp wlkj ozr
+[*] key: 21  =>  Dro aesmu lbygx pyh tewzc yfob dro vkji nyq
+[*] key: 22  =>  Cqn zdrlt kaxfw oxg sdvyb xena cqn ujih mxp
+[*] key: 23  =>  Bpm ycqks jzwev nwf rcuxa wdmz bpm tihg lwo
+[*] key: 24  =>  Aol xbpjr iyvdu mve qbtwz vcly aol shgf kvn
+[*] key: 25  =>  Znk waoiq hxuct lud pasvy ubkx znk rgfe jum
 ```
 ```python
 >>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl', 5)
@@ -184,8 +179,6 @@
 ### `wartanker.forensic.find_flag`
 
 ```python
->>> from wartanker import forensic
-[*] Wartanker, the Python3 toolkit for solving CTF problems
 >>> forensic.find_flag('W4RT4NK3R', './examples/dump')
 ['W4RT4NK3R{fake}', 'W4RT4NK3R{real_flag}']
 ```
@@ -194,6 +187,10 @@
 
 <!-- wartanker.hash -->
 ## `wartanker.hash`
+```python
+>>> from wartanker import hash
+[*] Wartanker, the Python3 toolkit for solving CTF problems
+```
 
 ### `wartanker.hash.sha256encode`
 
@@ -207,7 +204,6 @@
 
 <!-- wartanker.pwnable -->
 ## `wartanker.pwnable`
-
 ```python
 >>> from wartanker import pwnable
 [*] Wartanker, the Python3 toolkit for solving CTF problems
@@ -216,8 +212,6 @@
 ### `wartanker.pwnable.terminal`
 
 ```python
->>> from wartanker import pwnable
-[*] Wartanker, the Python3 toolkit for solving CTF problems
 >>> pwnable.terminal('id')
 'uid=501(junhoyeo) gid=20(staff) groups=20(staff),501(access_bpf),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),701(1),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh)'
 ```
@@ -226,11 +220,14 @@
 
 <!-- wartanker.reversing -->
 ## `wartanker.reversing`
+```python
+>>> from wartanker import reversing
+[*] Wartanker, the Python3 toolkit for solving CTF problems
+```
 
 ### `wartanker.reversing.crypto_solver`
 
 ```python
->>> from wartanker import reversing
 >>> f = '''
 ... def one(num, size):
 ...     r = num + size
@@ -262,13 +259,13 @@ Exploit of ROOTCTF 2017 prob `Calculate`
 
 <!-- wartanker.web -->
 ## `wartanker.web`
-
-### `wartanker.web.xss_exploit`
 ```python
 >>> from wartanker import web
 [*] Wartanker, the Python3 toolkit for solving CTF problems
->>> web.xss_exploit('post', 'https://www.uhmtoto.xyz/board/write.php', 'content', {}, {'user':'aa', 'PHPSESSID':'**************************'}, 'https://www.uhmtoto.xyz/
-board/board')
+```
+### `wartanker.web.xss_exploit`
+```python
+>>> web.xss_exploit('post', 'https://www.uhmtoto.xyz/board/write.php', 'content', {}, {'user':'aa', 'PHPSESSID':'**************************'}, 'https://www.uhmtoto.xyz/board/board')
 [*] trying 0 of 68
 [*] trying 1 of 68
 [*] trying 2 of 68
@@ -284,3 +281,11 @@ board/board')
 [*] trying 8 of 68
 [*] How about trying '<a onmouseover=alert(document.cookie)>xxs link</a>'?
 [*] Do you want more? [Y / N] n
+```
+`wartanker.web.xss_exploit`은 미리 저장된 XSS 페이로드 들을 이용해 Stored XSS 공격을 자동으로 수행해줍니다. 함수의 인자값은 `web.xss_exploit(method, URL, name, param, cookie, testURL)`으로, `method`에는 XSS Payload를 포함한 글을 올릴때 사용할 방법을 지정해야합니다. ( `get`이나 `post` ) `URL`에는 게시글을 올려줄 URL을 지정해야합니다. `name`에는 게시글 내용이 담길 변수를 지정해야 합니다. `param`에는 게시글을 올릴 때 게시글 내용을 제외하고 필요한 다른 파라미터들을 딕셔너리 형식으로 지정해야합니다. `cookie`에는 게시글을 올릴 때 필요한 세션값 등 쿠키값을 딕셔너리 형식으로 지정해야합니다. 마지막으로 `testURL`에는 XSS Payload를 포함할 게시글이 올라올 페이지의 URL을 지정해야 합니다.
+
+#### 사용 예
+```python
+web.xss_exploit('post', 'https://www.uhmtoto.xyz/board/write.php', 'content', {}, {'user':'aa', 'PHPSESSID':'**************************'}, 'https://www.uhmtoto.xyz/board/board')
+```
+`https://www.uhmtoto.xyz/board`
