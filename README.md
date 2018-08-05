@@ -125,6 +125,12 @@
 'Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl'
 ```
 ### `wartanker.crypto.caesar_decrypt`
+
+```python
+>>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl', 5)
+[*] key: 5  =>  The quick brown fox jumps over the lazy dog
+```
+
 ```python
 >>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl')
 [*] key: 0  =>  Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl
@@ -153,10 +159,6 @@
 [*] key: 23  =>  Bpm ycqks jzwev nwf rcuxa wdmz bpm tihg lwo
 [*] key: 24  =>  Aol xbpjr iyvdu mve qbtwz vcly aol shgf kvn
 [*] key: 25  =>  Znk waoiq hxuct lud pasvy ubkx znk rgfe jum
-```
-```python
->>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl', 5)
-[*] key: 5  =>  The quick brown fox jumps over the lazy dog
 ```
 
 <!-- wartanker.forensic -->
