@@ -122,6 +122,48 @@
 
 ### `wartanker.crypto.hex2str`
 
+### `wartanker.crypto.caesar_encrypt`
+```python
+>>> from wartanker import crypto
+[*] Wartanker, the Python3 toolkit for solving CTF problems
+>>> crypto.caesar_encrypt('The quick brown fox jumps over the lazy dog', 5)
+'Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl'
+```
+### `wartanker.crypto.caesar_decrypt`
+```python
+>>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl')
+[*] key: 0  =>  Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl
+[*] key: 1  =>  Znk waoiq hxuct lud pasvy ubkx znk rgfe jum
+[*] key: 2  =>  Aol xbpjr iyvdu mve qbtwz vcly aol shgf kvn
+[*] key: 3  =>  Bpm ycqks jzwev nwf rcuxa wdmz bpm tihg lwo
+[*] key: 4  =>  Cqn zdrlt kaxfw oxg sdvyb xena cqn ujih mxp
+[*] key: 5  =>  Dro aesmu lbygx pyh tewzc yfob dro vkji nyq
+[*] key: 6  =>  Esp bftnv mczhy qzi ufxad zgpc esp wlkj ozr
+[*] key: 7  =>  Ftq cguow ndaiz raj vgybe ahqd ftq xmlk pas
+[*] key: 8  =>  Gur dhvpx oebja sbk whzcf bire gur ynml qbt
+[*] key: 9  =>  Hvs eiwqy pfckb tcl xiadg cjsf hvs zonm rcu
+[*] key: 10  =>  Iwt fjxrz qgdlc udm yjbeh dktg iwt apon sdv
+[*] key: 11  =>  Jxu gkysa rhemd ven zkcfi eluh jxu bqpo tew
+[*] key: 12  =>  Kyv hlztb sifne wfo aldgj fmvi kyv crqp ufx
+[*] key: 13  =>  Lzw imauc tjgof xgp bmehk gnwj lzw dsrq vgy
+[*] key: 14  =>  Max jnbvd ukhpg yhq cnfil hoxk max etsr whz
+[*] key: 15  =>  Nby kocwe vliqh zir dogjm ipyl nby futs xia
+[*] key: 16  =>  Ocz lpdxf wmjri ajs ephkn jqzm ocz gvut yjb
+[*] key: 17  =>  Pda mqeyg xnksj bkt fqilo kran pda hwvu zkc
+[*] key: 18  =>  Qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald
+[*] key: 19  =>  Rfc osgai zpmul dmv hsknq mtcp rfc jyxw bme
+[*] key: 20  =>  Sgd pthbj aqnvm enw itlor nudq sgd kzyx cnf
+[*] key: 21  =>  The quick brown fox jumps over the lazy dog
+[*] key: 22  =>  Uif rvjdl cspxo gpy kvnqt pwfs uif mbaz eph
+[*] key: 23  =>  Vjg swkem dtqyp hqz lworu qxgt vjg ncba fqi
+[*] key: 24  =>  Wkh txlfn eurzq ira mxpsv ryhu wkh odcb grj
+[*] key: 25  =>  Xli uymgo fvsar jsb nyqtw sziv xli pedc hsk
+```
+```python
+>>> crypto.caesar_decrypt('Ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl', 5)
+[*] key: 5  =>  The quick brown fox jumps over the lazy dog
+```
+
 <!-- wartanker.forensic -->
 ## `wartanker.forensic`
 
