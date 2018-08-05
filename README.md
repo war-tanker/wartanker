@@ -175,6 +175,22 @@
 >>> forensic.get_fileinfo('./examples/dump')
 './examples/dump: ASCII text'
 ```
+```python
+>>> forensic.get_fileinfo('./examples/file_a')
+'./examples/a: PNG image data, 1472 x 702, 8-bit/color RGBA, non-interlaced'
+```
+```python
+>>> forensic.get_fileinfo('./examples/file_b')
+'./examples/b: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=0b9532aeba00a8b33aa9d296ec424970e3bf67b9, stripped'
+```
+```python
+>>> forensic.get_fileinfo('./examples/file_c')
+'./examples/c: Zip archive data, at least v1.0 to extract'
+```
+```python
+>>> forensic.get_fileinfo('./examples/file_d')
+'./examples/d: PE32 executable (GUI) Intel 80386, for MS Windows'
+```
 
 파일에 대한 정보를 불러옵니다.
 
@@ -185,7 +201,7 @@
 ['W4RT4NK3R{fake}', 'W4RT4NK3R{real_flag}']
 ```
 
-플래그 형식을 입력받아 파일에서의 검색 결과를 리스트로 반환합니다.
+플래그 형식을 정규표현식으로 입력받아 파일에서의 검색 결과를 리스트로 반환합니다.
 
 <!-- wartanker.hash -->
 ## `wartanker.hash`
