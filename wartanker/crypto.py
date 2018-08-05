@@ -46,3 +46,20 @@ def hex2str(hexdata, _split=''):
 
 def str2hex(string, _join=''):
     return _join.join([format(ord(char), '02X') for char in string])
+
+def caesar_encrypt(string, key):
+    ret = ''
+    for i in string:
+        if (i.isalpha()):
+            i = chr(((ord(i) - ord('A' if i.isupper() else 'a') + key) % 26) + ord('A' if i.isupper() else 'a'))
+        ret += i
+    return ret
+
+def caesar_decrypt(string):
+    for key in range(26):
+        ret = ''
+        for i in string:
+            if (i.isalpha()):
+                i = chr(((ord(i) - ord('A' if i.isupper() else 'a') + key) % 26) + ord('A' if i.isupper() else 'a'))
+            ret += i
+        print ('[*] key: ' + str(key) + '  =>  ' + ret)
