@@ -5,6 +5,11 @@ def get_source(URL, json=''):
         return requests.get(URL).text
     return requests.get(URL, json=json).text
 
+def post(url, json={}, form={}):
+    return requests.post(url, headers={
+        'Content-Type': 'charset=utf-8'
+    }, data=form, json=json).text
+
 def xss_exploit(method, URL, name, param, cookie, testURL):
     # met=True: get, met=False: post
     if (method[:1].lower() == 'g'):
