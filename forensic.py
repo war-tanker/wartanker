@@ -10,8 +10,8 @@ def get_fileinfo(file_path):
         return output.decode().strip()
     else: raise UnsupportedOsError
 
-def find_flag(flag, file_path):
+def find_flag(regex, file_path):
     file = open(file_path, 'rb')
-    data = file.read()
-    p = re.compile(flag + '\{.{0,}\}')
+    data = file.read().decode('utf-8')
+    p = re.compile(regex)
     return p.findall(data)
